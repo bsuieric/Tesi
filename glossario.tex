@@ -34,10 +34,65 @@
 \newacronym[description={\glslink{jvmg}{Java Virtual Machine}}]
 {JVM}{JVM}{Java Virtual Machine}
 
+\newacronym[description={\glslink{daog}{Data Access Object}}]
+{dao}{DAO}{Data Access Object}
+
+\newacronym[description={\glslink{pdca}{Plan-Do-Check-Act}}]
+{pdca}{PDCA}{Plan-Do-Check-Act}
+
+
 %**************************************************************
 % Glossario
 %**************************************************************
 %\renewcommand{\glossaryname}{Glossario}
+
+\newglossaryentry{gantt}
+{
+	name=\glslink{gantt}{gantt},
+	text=Gantt,
+	sort=gantt,
+	description={Il diagramma di Gantt è uno strumento di supporto alla gestione dei progetti che permette la rappresentazione grafica di un calendario di attività. Esso è utile al fine di pianificare, coordinare e tracciare specifiche attività in un progetto dandone una chiara illustrazione dello stato d'avanzamento.}
+}
+
+\newglossaryentry{slack}
+{
+	name=\glslink{slack}{slack},
+	text=slack,
+	sort=slack,
+	description={periodo di inattività.}
+}
+
+\newglossaryentry{singleton}
+{
+	name=\glslink{singleton}{Singleton},
+	text=Singleton,
+	sort=Singleton,
+	description={è un design pattern creazionale che ha lo scopo di garantire che di una determinata classe venga creata una e una sola istanza, e di fornire un punto di accesso globale a tale istanza.}
+}
+
+\newglossaryentry{strategy}
+{
+	name=\glslink{strategy}{Strategy},
+	text=Strategy,
+	sort=Strategy,
+	description={è uno dei pattern comportamentali. Viene utilizzato per definire una famiglia di algoritmi, incapsularli e renderli intercambiabili (in base ad una qualche condizione) in modo trasparente al client che ne fa uso. Il pattern è utile in quelle situazioni dove sia necessario modificare dinamicamente gli algoritmi utilizzati da un'applicazione.}
+}
+
+\newglossaryentry{daog}
+{
+	name=\glslink{dao}{DAO},
+	text=Data Access Object,
+	sort=dao,
+	description={è un pattern architetturale per la gestione della persistenza: si tratta fondamentalmente di una classe con relativi metodi che rappresenta un'entità tabellare di un RDBMS, usata principalmente in applicazioni web, per stratificare e isolare l'accesso ad una tabella/record tramite query (poste all'interno dei metodi della classe) ovvero al data layer da parte della business logic creando un maggiore livello di astrazione ed una più facile manutenibilità. I metodi del DAO con le rispettive query dentro verranno così richiamati dalle classi della business logic.}
+}
+
+\newglossaryentry{repository}
+{
+	name=\glslink{repository}{repository},
+	text=repository,
+	sort=repository,
+	description={database in grado di contenere svariate tipologie di dati, corredate da relative informazioni (metadati). Offre inoltre un sistema di versionamento in grado di tener traccia delle modifiche effettuate al suo interno.}
+}
 
 \newglossaryentry{jvmg}
 {
