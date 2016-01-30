@@ -6,22 +6,85 @@
 %**************************************************************
 \chapter{Valutazione retrospettiva}
 \label{cap:conclusioni}
+In questo capitolo vengono rendicontate le attività svolte, analizzando se il prodotto sviluppato soddisfa gli obiettivi prefissati. Vengono inoltre descritte le problematiche incontrate oltre che un bilancio formativo.
 %**************************************************************
 
 %**************************************************************
 
 %**************************************************************
 \section{Raggiungimento degli obiettivi}
+Gli obiettivi prefissati prima dell'inizio dello stage hanno subito delle leggere modifiche, dovute principalmente alla strategia aziendale, privilegiando lo sviluppo del nuovo modulo \textit{Tres}. Il \textit{porting} del modulo, infatti \textit{Dre} non è stato ultimato, ad eccezione di un'unica attività, quella del \textit{map reduce}. Questo ha comportato il mancato sviluppo di nuovi algoritmi. Se da un lato i requisiti desiderabili relativi al nuovo modulo non sono stati soddisfatti, dall'altro i requisiti obbligatori sono stati tutti soddisfatti. Il sistema viene come un'analisi per l'estrazione di informazioni utili come supporto alle decisioni. La realizzazione di questo sistema  rappresenta comunque una base per il suo sviluppo futuro. 
+Il mio obiettivo di lavorare con tecnologie del \textit{Data Mining}, di esplorare e di modellare grandi masse di dati è stato dunque raggiunto. Attraverso questo progetto sono riuscito ad avere un'introduzione ai \textit{big data}, che sono sicuramente uni dei temi più caldi nel panorama tecnologico attuale. Anche l'interesse da parte delle aziende è alto, consapevoli del patrimonio di dati in loro possesso e dei vantaggi strategici in termini di business attraverso una corretta gestione dei dati. \\
+\section{Consuntivo orario finale}
+Dal momento che la pianificazione dell'attività di studio è stata sottostimata, ho dovuto recuperare le ore dalle altre attività in cui avevo previsto un periodo di \textit{slack}. Di seguito riporto il consuntivo delle ore delle varie attività di stage:
+
+\newpage
+\begin{table}[h]
+	\begin{tabular}{|p{0.4\textwidth}|p{0.3\textwidth}|p{0.3\textwidth}|}
+		\toprule
+		
+		\textbf{Attività} & \textbf{Ore preventivate} & \textbf{Ore effettive} \\
+		\bottomrule
+	\end{tabular}\\	
+\end{table}
+
+\begin{table}[h]
+	\begin{tabular}{|p{0.4\textwidth}|p{0.3\textwidth}|p{0.3\textwidth}|}
+		\toprule
+		\textbf{Formazione} & \textbf{56} & \textbf{62}  \\ \midrule
+		\multicolumn{3}{|p{1\textwidth}|}{Il periodo di formazione ha richiesto più tempo di quello preventivato Il motivo del ritardo è dovuto alla difficoltà di apprendere il linguaggio funzionale Scala in soli due giorni, dato il numero alto di esercizi ed esempi a cui dovevo fare attenzione e la necessità di capire in dettaglio i vari procedimenti.} \\
+		\bottomrule
+	\end{tabular}\\
+	\par\bigskip
+	
+	\begin{tabular}{|p{0.4\textwidth}|p{0.3\textwidth}|p{0.3\textwidth}|}
+		\toprule
+		\textbf{Migrazione e Porting} & \textbf{80} & \textbf{72}  \\ \midrule
+		\multicolumn{3}{|p{1\textwidth}|}{Durante l'attività di migrazione e \textit{porting} ho recuperato il giorno perso con l'attività di formazione perché, in collaborazione con il responsabile, abbiamo deciso di dare precedenza allo sviluppo del nuovo modulo, lasciando cosi in sospeso il \textit{map reduce} del \textit{database}.} \\
+		\bottomrule
+	\end{tabular}\\
+	\par\bigskip
+	
+	\begin{tabular}{|p{0.4\textwidth}|p{0.3\textwidth}|p{0.3\textwidth}|}
+		\toprule
+		\textbf{Sviluppo modulo} & \textbf{186} & \textbf{186}  \\ \midrule
+		\textit{-Analisi dei requisiti} & \textit{40} & \textit{56} \\ \midrule
+		\multicolumn{3}{|p{1\textwidth}|}{Durante le attività di analisi dei requisiti c'è stato un ritardo dovuto alla difficoltà di adattare le idee emerse dalle riunioni e adattarle al contesto particolare.} \\ \midrule
+		\textit{-Progettazione} & \textit{40} & \textit{32} \\ \midrule
+		\multicolumn{3}{|p{1\textwidth}|}{Nella progettazione non ho riscontrato difficoltà e di conseguenza ho usato meno tempo di quanto preventivato, andando così a recuperare il ritardo accumulato durante l'attività di analisi.} \\ \midrule
+		\textit{-Sviluppo} & \textit{80} & \textit{97} \\ \midrule
+		\multicolumn{3}{|p{1\textwidth}|}{Nello sviluppo ho riscontrato delle difficoltà nell'interfacciamento con il \textit{database}, richiedendo più tempo di quanto preventivato.} \\ \midrule
+		\textit{-test} & \textit{40} & \textit{23} \\ \midrule
+		\bottomrule
+	\end{tabular}\\
+	\par\bigskip
+\caption{Consuntivo orario delle attività}
+\end{table}
+
 
 \section{Problematiche riscontrate}
+Dato che lo stage è un'occasione di conoscenza diretta con il modo del lavoro, oltre che di acquisizione di nuove conoscenze, ho dovuto scontrarmi con tecnologie, strumenti e modalità di lavoro a me nuovi. Questa sezione tratta proprio le problematiche riscontrate durante il periodo di stage.
+\subsection{Sviluppare con Scala}
+Essendo abituato a sviluppare seguendo un approccio imperativo mi sono trovato in difficoltà a cambiare modalità in cosi poco tempo. Particolarmente difficile è stata programmare usando le \gls{api} Java per quanto riguarda l'interfacciamento al \textit{database}.
+
+\subsection{Livello dei requisiti}
+Essendo per me un argomento completamente nuovo quello dei sistemi di raccomandazione, durante l'attività di analisi ho sfruttato al massimo i numerosi incontri con il responsabile per chiarire ogni dubbio prima di cominciare la progettazione. Infatti, durante le varie riunioni alcuni requisiti espressi non sono stati capiti, ma il contatto diretto e ripetuto con il responsabile mi ha aiutato a chiarire alcuni aspetti non chiari. La sua conferma mi ha permesso di procedere con la progettazione.
+
 
 %**************************************************************
 
 \section{Bilancio formativo}
 
-\subsection{Competenze mancanti inizio stage}
-
 \subsection{Competenze acquisite}
+Lo stage mi ha permesso di lavorare con tecnologie nuove e innovative del \textit{data mining e machine learning}, un campo molto caldo che sta avendo molto successo. Ovviamente, il mio bagaglio di conoscenze si è arricchito con le seguenti tecnologie:
+\begin{itemize}
+	\item \textbf{Scala:} mi ha permesso di utilizzare la programmazione funzionale, un paradigma mai usato in precedenza con il quale ho avuto delle difficoltà iniziali, ma che ho imparato ad apprezzare;
+	\item \textbf{Web service REStful:} anche se avevo già avuto esperienze con lo stile architetturale \gls{REST}, il progetto mi ha permesso di approfondire le mie conoscenze. Inoltre, ho utilizzato uno dei più popolari formati per lo scambio di dati, chiamato \gls{JSON};
+	\item \textbf{OrientDB:} un \textit{database} molto flessibile che offre una una moltitudine di modalità operative, alcune delle quali anche su strutture a grafo. L'apprendimento, rispetto alle mie esperienze con i \textit{database} relazionali, non è stato difficile. Purtroppo non ho usato lo \textit{sharding e replication}.
+\end{itemize}
 
 %**************************************************************
 \subsection{Valutazione personale}
+L'esperienza dello stage mi ha permesso di conoscere da vicino un mondo a me prima sconosciuto, quello del lavoro. È stata un esperienza interessante e positiva e ritengo sia essenziale affrontarla prima della conclusione del corso di laurea perché aiuta a capire i meccanismi del lavoro dove un gruppo di persone si relazionano, si confrontano e gestiscono problemi. Ho applicato tanto di quello che ho studiato all'università, in particolare gli insegnamenti forniti nel corso di \textit{Ingegneria del Software}, che mi hanno permesso l'apprendimento dei principi, delle metodologie \textit{best practice} e degli strumenti necessari in modo da sviluppare e progettare software. Senza questi insegnamenti e senza la loro messa in pratica durante il progetto didattico, avrei avuto più di una difficoltà a finire il progetto di stage.\\
+Un altro corso di fondamentale importanza è stato quello di \textit{Programmazione ad Oggetti}, che mi ha permesso di apprendere in modo approfondito la programmazione orientata agli oggetti. \\
+Pure se credo che manchi un corso sullo sviluppo mobile e web e che alcune lezioni siano superficiali e troppo rapide, credo fortemente che attraverso il corso di \textit{Ingegneria del Software} e la massa in pratica dei concetti studiati, mediante il progetto didattico, si hanno a disposizione tutti gli elementi per riuscirci nel mondo del lavoro. Quindi, sceglierò questa via sperando che mi porti qualcosa di positivo e gratificante.

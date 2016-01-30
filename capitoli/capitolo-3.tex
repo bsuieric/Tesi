@@ -89,11 +89,10 @@ Riporto di seguito la tabella con i requisiti individuati e una breve descrizion
 		R[OBB][F]9 & Il sistema deve permettere il calcolo del guadagno di informazione del \textit{dataset} \\ \midrule
 		R[OBB][V]10 & Il sistema deve permettere la costruzione ricorsivamente dell'albero di decisione \\ \midrule
 		R[OBB][V]11 & Il sistema deve permettere la creazione di tanti nodi quanti sono i possibili valori dell'attributo scelto \\ \midrule
-		R[OBB][V]12 & L'algoritmo di costruzione del albero deve fermarsi quando tutte le istanze di un nodo appartengono alla stessa classe \\ \midrule
+		R[OBB][V]12 & L'algoritmo di costruzione del albero deve fermarsi quando tutte le istanze di un nodo appartengono alla stessa classe \\ \midrule	
 		R[OBB][F]13 & Il sistema deve permettere di ricevere una richiesta per classificare un comportamento vuoto \\ \midrule
 		R[OBB][F]14 & Il sistema, per la richiesta con un comportamento vuoto, deve restituire tutte le raccomandazioni con le percentuale calcolate in base al \textit{dataset} \\ \midrule
 		R[OBB][F]15 & Il sistema deve permettere di classificare un comportamento dell'utente \\ \midrule
-		R[OBB][F]16 & Il sistema deve fornire una raccomandazione o pi√π in base alla classificazione del comportamento \\ \midrule	
 		\bottomrule
 		
 	\end{tabular}
@@ -103,7 +102,7 @@ Riporto di seguito la tabella con i requisiti individuati e una breve descrizion
 \begin{table}[h]
 	\begin{tabular}{|p{0.2\textwidth}|p{0.7\textwidth}|}
 		\midrule
-		
+		R[OBB][F]16 & Il sistema deve fornire una raccomandazione o pi√π in base alla classificazione del comportamento \\ \midrule
 		R[OBB][F]17 & Il sistema deve fornire insieme alla raccomandazione la percentuale di adeguatezza \\ \midrule
 		R[OBB][V]18 & Il sistema deve permettere la modifica dell'albero di decisione ogni 24 ore \\ \midrule
 		R[OBB][V]19 & Devono essere rispettate le metriche sulla stesura del codice riportate nella sezione \ref{metriche} \\ \midrule
@@ -159,9 +158,9 @@ Il \textit{package} \textit{models} contiene la logica di \textit{business} ed √
 \label{fig:tres-models}
 \end{figure}
 
+\newpage
 Il core dell'applicazione viene implementato dal \textit{package models}, che incapsulando lo stato dell'applicazione definisce i dati e le operazioni che possono essere eseguite su questi.
 
-\newpage
 \subsubsection*{Classi contenute}
 \begin{itemize}
 	\item \textbf{StartupConfiguration:} contiene la configurazione che fa partire, ogni 24 ore, l'algoritmo dedicato alla creazione dell'albero decisionale su cui si basano tutte le raccomandazioni.
@@ -178,7 +177,6 @@ Il core dell'applicazione viene implementato dal \textit{package models}, che in
 	\end{figure}
 	Il \textit{package} contiene tutta la logica per costruire alberi di decisione e offrire le raccomandazioni con le rispettive probabilit√†. Infatti, ad ogni raccomandazione o insieme di raccomandazioni viene fornita anche le percentuale di scelta che ha il prodotto. Utilizza il \textit{package storage} per aggiornare i dati presenti nel \textit{database};
 	
-\newpage
 	\subsubsection*{commons}
 	\begin{figure}[h]
 	\centering
@@ -191,7 +189,7 @@ Il core dell'applicazione viene implementato dal \textit{package models}, che in
 \subsubsection*{storage}
 	\begin{figure}[h]
 	\centering
-	\includegraphics[width=0.6\linewidth]{immagini/tres-storage}
+	\includegraphics[width=0.55\linewidth]{immagini/tres-storage}
 	\caption[Diagramma del package storage]{Diagramma del package storage}
 	\label{fig:tres-storage}
 	Il \textit{package} contiene la logica di accesso ai dati. Le classi all'interno si occupano di interagire con il \textit{database.} 
@@ -309,7 +307,7 @@ Di seguito sono elencate le risorse \gls{REST} associate al tipo di metodo che √
 			\begin{tabular}{|p{0.5\textwidth}|p{0.4\textwidth}|}
 				\toprule
 				\textbf{/tres/recommendation} & \textbf{POST}  \\ \midrule
-				\multicolumn{2}{|c|}{Calcola la raccomandazione da fornire ad un utente .} \\
+				\multicolumn{2}{|c|}{Calcola la raccomandazione da fornire ad un utente.} \\
 				\bottomrule
 			\end{tabular}\\
 			\par\bigskip
