@@ -12,7 +12,7 @@
 
 %**************************************************************
 \section{Pianificazione}
-Le attività sono state pianificate prima dell'inzio dello stage. Per conseguire gli obiettivi sono state previste circa 300 ore, suddivise in 40 ore settimanali per 8 settimane. Lo stage è iniziato il giorno 01/10/2015 ed è terminato il 27/11/2015. La pianificazione ha subito una leggera modifica nelle attività, in quanto ho privilegiato lo sviluppo del nuovo modulo \textit{Bdrim} anziché il \textit{porting} del progetto \textit{Dre}. Ogni periodo è stato suddiviso in varie attività. Tali attività sono state suddivise in ulteriori sotto-attività. Di queste sotto-attività viene riportato il diagramma di \gls{gantt}.
+Le attività sono state pianificate prima dell'inizio dello stage. Per conseguire gli obiettivi sono state previste circa 300 ore, suddivise in 40 ore settimanali per 8 settimane. Lo stage è iniziato il giorno 01/10/2015 ed è terminato il 27/11/2015. La pianificazione ha subito una leggera modifica nelle attività, in quanto ho privilegiato lo sviluppo del nuovo modulo \textit{Bdrim} anziché il \textit{porting} del progetto \textit{Dre}. Ogni periodo è stato suddiviso in varie attività. Tali attività sono state suddivise in ulteriori sotto-attività. Di queste sotto-attività viene riportato il diagramma di \gls{gantt}.
 \begin{itemize}
 	\item \textbf{Prima settimana:}
 	\begin{itemize}
@@ -40,11 +40,11 @@ La figura \ref{fig:ScreenShot2016-01-06at17} rappresenta il diagramma di \textit
 %**************************************************************
 \newpage
 \section{Studio del dominio}
-Per evitare di incorrere in gravi ritardi e considerata la particolare tecnologia utilizzata, ho studiato e approfondito la mia conoscenza delle tecnologie, attingendo a una documentazione adeguata. Durante la redazione del \textit{Piano di Lavoro}, tenendo conto della propria inesperienza con le tecnologie richieste ho deciso di prevedere un periodo di \gls{slack} per ogni attività con alta criticità, in modo che un eventuale ritardo non vada ad influenzare la durata totale del progetto.
+Per evitare di incorrere in gravi ritardi e considerata la particolare tecnologia utilizzata, ho studiato e approfondito la mia conoscenza delle tecnologie, attingendo a una documentazione adeguata. Durante la redazione del \textit{Piano di Lavoro}, tenendo conto della propria inesperienza con le tecnologie richieste ho deciso di prevedere un periodo di \gls{slack} per ogni attività con alta criticità, in modo che un eventuale ritardo non andasse ad influenzare la durata totale del progetto.
 
 
 \subsection*{Scala}
-Prima dell'inizio dello stage non avevo conoscenze del linguaggio di programmazione Scala. Per apprendere il linguaggio ho seguito il corso di \textit{Functional Programming Principles in Scala}\footnote{\url{https://www.coursera.org/course/progfun}} e i tutorial presenti nel sito ufficiale\footnote{\url{http://www.scala-lang.org/}}. Entrare nel meccanismo della programmazione funzionale non è stato facile, ma il vasto numero di esempi ed esercizi mi hanno aiutato a capire il concetto che sta alla base della programmazione funzionale.
+Prima dell'inizio dello stage non avevo conoscenze del linguaggio di programmazione Scala. Per apprendere il linguaggio ho seguito il corso di \textit{Functional Programming Principles in Scala}\footnote{\url{https://www.coursera.org/course/progfun}} e i tutorial presenti nel sito ufficiale\footnote{\url{http://www.scala-lang.org/}}. Entrare nel meccanismo della programmazione funzionale non è stato facile, ma il vasto numero di esempi ed esercizi mi hanno aiutato a capire il concetto che sta alla base di tale programmazione.
 
 \subsection*{Play Framework}
 Successivamente ho cominciato lo studio del \gls{framework} che avrei utilizzato durante la realizzazione del progetto. Grazie a un'ottima documentazione\footnote{\url{https://www.playframework.com/documentation/2.4.x/Home}} e ai \textit{tutorials} presenti nel sito di Play\footnote{\url{https://www.playframework.com/documentation/2.4.x/Tutorials}}, l'apprendimento dei concetti principali è stato facile.
@@ -58,7 +58,7 @@ L'applicativo \textit{Tres} è stato progettato per una tipologia di utente:
 \begin{itemize}
 	\item La piattaforma \textit{Bdrim}, che usufruisce delle \gls{api} fornite da \textit{Tres}.
 \end{itemize}
-Durante l'attività di analisi ho fatto molteplici riunioni di tipo \textit{brainstorming} da cui sono emersi la maggior parte dei requisiti. I requisiti sono stati raccolti, in forma tabellare, in un documento di testo, in modo da poter essere sempre disponibile per la consultazione e la modifica. Essi sono stati divisi per tipo, utilizzando da seguente notazione:\\
+Durante l'attività di analisi ho fatto molteplici riunioni di tipo \textit{brainstorming} da cui sono emersi la maggior parte dei requisiti. Tali requisiti sono stati raccolti, in forma tabellare, in un documento di testo, in modo da poter essere sempre disponibile per la consultazione e la modifica. Essi sono stati divisi per tipo, utilizzando da seguente notazione:\\
 R[importanza][tipologia][codice]
 \begin{itemize}
 	\item \textit{Importanza} può assumere i seguenti valori:
@@ -68,7 +68,7 @@ R[importanza][tipologia][codice]
 	\end{itemize}
 	\item \textit{Tipologia} può assumere i seguenti valori:
 	\begin{itemize}
-		\item \textbf{F}: requisiti funzionale. Specifica una funzionalità che il software deve avere;
+		\item \textbf{F}: requisiti funzionali. Specifica una funzionalità che il software deve avere;
 		\item \textbf{V}: requisiti di vincolo. Specifica il vincolo che il software deve avere;
 		\item \textbf{P}: requisiti di prestazione. Specifica un vincolo di performance che il software deve fornire. 
 	\end{itemize}
@@ -79,7 +79,7 @@ Riporto di seguito la tabella con i requisiti individuati e una breve descrizion
 	\begin{tabular}{|p{0.2\textwidth}|p{0.7\textwidth}|}
 		\midrule
 		R[OBB][F]1 & Il sistema deve permettere l'inserimento di un nuovo comportamento \\ \midrule
-		R[OBB][F]2 & Il sistema deve restituire un messaggio di errore in caso di errore durante il salvataggio \\ \midrule
+		R[OBB][F]2 & Il sistema deve restituire un messaggio di segnalazione in caso di errore durante il salvataggio \\ \midrule
 		R[OBB][F]3 & I dati ricevuti devono essere in formato \gls{JSON} \\ \midrule
 		R[OBB][F]4 & I dati inviati devono essere in formato \gls{JSON} \\ \midrule
 		R[OBB][F]5 & Il sistema deve restituire un messaggio di errore in caso di \gls{JSON} non valido \\ \midrule
@@ -89,7 +89,7 @@ Riporto di seguito la tabella con i requisiti individuati e una breve descrizion
 		R[OBB][F]9 & Il sistema deve permettere il calcolo del guadagno di informazione del \textit{dataset} \\ \midrule
 		R[OBB][V]10 & Il sistema deve permettere la costruzione ricorsivamente dell'albero di decisione \\ \midrule
 		R[OBB][V]11 & Il sistema deve permettere la creazione di tanti nodi quanti sono i possibili valori dell'attributo scelto \\ \midrule
-		R[OBB][V]12 & L'algoritmo di costruzione del albero deve fermarsi quando tutte le istanze di un nodo appartengono alla stessa classe \\ \midrule	
+		R[OBB][V]12 & L'algoritmo di costruzione dell'albero deve fermarsi quando tutte le istanze di un nodo appartengono alla stessa classe \\ \midrule	
 		R[OBB][F]13 & Il sistema deve permettere di ricevere una richiesta per classificare un comportamento vuoto \\ \midrule
 		R[OBB][F]14 & Il sistema, per la richiesta con un comportamento vuoto, deve restituire tutte le raccomandazioni con le percentuale calcolate in base al \textit{dataset} \\ \midrule
 		R[OBB][F]15 & Il sistema deve permettere di classificare un comportamento dell'utente \\ \midrule
@@ -120,7 +120,7 @@ Riporto di seguito la tabella con i requisiti individuati e una breve descrizion
 \section{Progettazione architetturale}
 Questa sezione ha lo scopo di descrivere l'architettura generale e i \textit{design pattern} utilizzati durante la realizzazione del progetto.
 \subsection{Architettura generale}
-Come ho già anticipato il modulo \textit{Tres} deve essere utilizzabile dalla piattaforma \textit{Bdrim}.  I moduli hanno lo scopo di aumentare l'indipendenza tra le sue parti costituenti e facilitare la manutenzione. Infatti, questi sistemi durante la loro vita subiscono numerose modifiche: per eliminare difetti, per potenziare delle funzionalità o addirittura eliminare quelle obsolete oppure implementarne di nuove. La coppia \textit{Tres-Bdrim} può essere vista come il binomio di due componenti indipendenti tra di loro che comunicano utilizzando lo stile \gls{REST}. Ho deciso di utilizzare il formato \gls{JSON} come formato di rappresentazione dei dati, poiché si integra perfettamente con il \gls{framework} utilizzato e il linguaggio Scala.\\
+Come ho già anticipato il modulo \textit{Tres} deve essere utilizzabile dalla piattaforma \textit{Bdrim}.  I moduli hanno lo scopo di aumentare l'indipendenza tra le sue parti costituenti e facilitare la manutenzione. Infatti, questi sistemi durante la loro vita subiscono numerose modifiche: per eliminare difetti, per potenziare delle funzionalità o addirittura superare quelle obsolete ed implementarne di nuove. La coppia \textit{Tres-Bdrim} può essere vista come il binomio di due componenti indipendenti tra di loro che comunicano utilizzando lo stile \gls{REST}. Ho deciso di utilizzare il formato \gls{JSON} come formato di rappresentazione dei dati, poiché si integra perfettamente con il \gls{framework} utilizzato e il linguaggio Scala.\\
 Entrambe le componenti sono basate su un'architettura di tipo \gls{mvc}. Nella seguente figura è possibile avere una visione d'insieme del progetto.
 
 \begin{figure}[h]
@@ -197,7 +197,7 @@ Il core dell'applicazione viene implementato dal \textit{package models}, che in
 
 \newpage
 \subsection*{controllers}
-Il \textit{package} contiene le componenti che gestiscono la parte \textit{controller} dell'applicazione. La classe \textit{BridgeController} contiene i metodi necessari da invocare come risposta alla chiamata di una determinata richiesta. Vi è un'interazione con il \textit{package models} poiché in esso vengono depositate e prelevati i dati necessari alla richieste. Inoltre ha una dipendenza uscente verso il \textit{package views}.
+Il \textit{package} contiene le componenti che gestiscono la parte \textit{controller} dell'applicazione. La classe \textit{BridgeController} contiene i metodi necessari da invocare come risposta alla chiamata di una determinata richiesta. Vi è un'interazione con il \textit{package models} poiché in esso vengono depositati e prelevati i dati necessari alla richieste. Inoltre ha una dipendenza uscente verso il \textit{package views}.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.7\linewidth]{immagini/tres-controller}
@@ -207,8 +207,8 @@ Il \textit{package} contiene le componenti che gestiscono la parte \textit{contr
 
 \subsection{Modello del database}
 Nella rappresentazione grafica del \textit{database}, il grafo viene rappresentato mediante
-un disegno in cui ai nodi si fanno corrispondere piccoli cerchi e agli spigoli si fanno corrispondere frecce che rappresentano la relazione tra due vertici. La direzione degli spigoli è importante perché dà un senso alla relazione.\\
-Per interfacciarmi col \textit{database} ho usato le \gls{api} \textit{Blueprints}\footnote{\url{https://github.com/tinkerpop/blueprints}} sviluppate dal \gls{framework} \textit{Tinkerpop}\footnote{\url{http://tinkerpop.incubator.apache.org/}}. In particolare, \textit{Tinkerpop} è un set di interfacce e specifiche per lavorare con grafi, che OrientDB supporta dalla versione 0.9.22.
+un disegno in cui ai nodi si fanno corrispondere piccoli cerchi e agli spigoli frecce che rappresentano la relazione tra due vertici. La direzione degli spigoli è importante perché dà un senso alla relazione.\\
+Per interfacciarmi con il \textit{database} ho usato le \gls{api} \textit{Blueprints}\footnote{\url{https://github.com/tinkerpop/blueprints}} sviluppate dal \gls{framework} \textit{Tinkerpop}\footnote{\url{http://tinkerpop.incubator.apache.org/}}. In particolare, \textit{Tinkerpop} è un set di interfacce e specifiche per lavorare con grafi, che OrientDB supporta dalla versione 0.9.22.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.6\linewidth]{immagini/db-a-graffo}
@@ -314,7 +314,7 @@ Di seguito sono elencate le risorse \gls{REST} associate al tipo di metodo che �
 		\end{table}
 		
 \subsection{Diagrammi di sequenza}
-Si mostrano il diagrammi di sequenza di alcune chiamate \gls{REST} che effettua il sistema per meglio specificare il funzionamento.
+Si mostrano i diagrammi di sequenza di alcune chiamate \gls{REST} che effettua il sistema per meglio specificare il funzionamento.
 \subsubsection*{Inserimento nuovo behavior}
 Il diagramma sottostante illustra le operazioni necessarie all'inserimento di un nuovo \textit{behavior}. Da \textit{Bdrim} arriva una richiesta \textit{Http} che viene instradata alla classe \textit{BridgeController} mediante il file \textit{routes}. Il \textit{controller} invoca la funzione \textit{insertBehavior}, la quale valida il \gls{JSON} ricevuto e successivamente chiama il metodo \textit{save} della classe \textit{BehaviorDAO}.
 \begin{figure}[h]
@@ -336,7 +336,7 @@ Il diagramma sottostante illustra le operazioni necessarie per capire se l'algor
 
 
 \section{Verifica e validazione}\label{metriche}
-Ho adottato metriche specifiche e strumenti per l'analisi statica e dinamica al fine di perseguire gli obbiettivi di qualità, sia di processo che di prodotto. Per questo motivo è necessaria una costante verifica sulle attività svolte. Cosi facendo si permette di trovare possibili incongruenze e anomalie per poter intervenire in maniera tempestiva ed efficace.
+Ho adottato metriche specifiche e strumenti per l'analisi statica e dinamica al fine di perseguire gli obbiettivi di qualità, sia di processo che di prodotto. Per questo motivo è necessaria una costante verifica sulle attività svolte. Così facendo si permette di trovare possibili incongruenze e anomalie per poter intervenire in maniera tempestiva ed efficace.
 Gli strumenti utilizzati sono i seguenti:
 \begin{itemize}
 	\item \textbf{Intellij IDEA\footnote{\url{https://www.jetbrains.com/idea/whatsnew/}}: }fornisce una soluzione automatica per trovare tutti gli errori di sintassi più comuni e la percentuale di documentazione del codice;
@@ -351,7 +351,7 @@ Riporto di seguito un elenco delle metriche adottate:
 	\item \textbf{Copertura dei test:} valore percentuale che indica la porzione di codice sorgente coperta da test. Il valore minimo entro il quale ho deciso di rimanere è 70\%.
 \end{itemize}
 Considerando il tempo limitato a disposizione, mi sono concentrato sulla realizzazione di un numero sufficientemente alto di test di unità e integrazione.\\
-Gli eventuali errori durante questa attività sono stati corretti. In seguito ho proseguito con i test di integrazione, testando che la combinazione di più componenti funzioni secondo le aspettative. Conclusi i test di integrazione, ho fatto un test all'intero sistema. Infine, negli ultimi giorni di stage ho verificato che i requisiti obbligatori tracciati in fase di progettazione fossero tutti soddisfatti e in presenza del responsabile, ho fatto il collaudo del software, dimostrando il corretto funzionamento.\\
+Gli eventuali errori durante questa attività sono stati corretti. In seguito ho proseguito con i test di integrazione, verificando come la combinazione di più componenti funzionasse secondo le aspettative. Conclusi i test di integrazione, ho fatto un test all'intero sistema. Infine, negli ultimi giorni di stage, ho verificato che i requisiti obbligatori tracciati in fase di progettazione fossero tutti soddisfatti e in presenza del responsabile, ho fatto il collaudo del software, dimostrando il corretto funzionamento.\\
 
 \subsection{Risultati test}
 Di seguito riporto le tabelle in cui verranno descritti alcuni dei test di integrazione, di unità e di sistema effettuati per verificare il corretto funzionamento dell'applicativo e i risultati di tali test:
