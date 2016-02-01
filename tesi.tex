@@ -36,7 +36,7 @@
 
 %\usepackage{amsmath,amssymb,amsthm}    % matematica
 
-\usepackage[english, italian]{babel}    % per scrivere in italiano e in inglese;
+\usepackage[italian]{babel}    % per scrivere in italiano e in inglese;
                                         % l'ultima lingua (l'italiano) risulta predefinita
 
 \usepackage{bookmark}                   % segnalibri
@@ -137,6 +137,8 @@
 % Materiale finale
 %**************************************************************
 \backmatter
-\printglossaries
+\printglossary[toctitle=Glossario]
+\printglossary[type=\acronymtype, toctitle=Acronimi]
+%\printglossaries
 \input{inizio-fine/bibliografia}
 \end{document}
